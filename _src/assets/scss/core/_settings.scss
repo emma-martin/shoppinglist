@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-white: #ffffff;
+
+$color-select: #448883;
+$color-text: #448883;
+$color-unselect: #D9624C;
+$color-border: #D9624C;
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i|Noto+Serif:400,700');
+
+$font-title: 'Noto Serif', serif;
+$font-text: 'Noto Sans', sans-serif;
+
+$size-title: 1.8rem;
+$size-subtitle: 2.3rem;
+$size-btn:0.9rem;
+$size-text: 2.1rem;
+
+
+%btn-basics{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 15px;
+  height: 70px;
+  min-width: 80px;
+  border: none;
+  outline: none;
+  color:$color-white;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 2.3em;
+  border-radius: 10px;
+}
+
+%visually-hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
